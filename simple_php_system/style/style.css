@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e4e9f7;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.checkboxes-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style individual checkboxes and labels */
+.course-checkbox {
+    margin-right: 10px; /* Add spacing between checkboxes and labels as needed */
+}
+
+.form-container {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the form container */
+}
+
+
+.container-mt-5{
+
+    margin-top : 2px;
+    margin-bottom: 2px;
+    padding: 20px;
+
+}
+
+.button-role{
+
+    margin-left: 5px;
+    margin-right: 5px;
+    padding : 10px;
+}
+
+/* Style individual form columns */
+.form-column {
+    flex: 1; /* Equal width for both columns */
+    padding: 10px;
+}
+
+.box {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-header {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.list-unstyled {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.list-unstyled a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.list-unstyled a:hover {
+    color: #17a2b8;
+}
+
+/* Content styling */
+#content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Toggle button styling */
+#sidebarCollapse {
+    background-color: #333;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Other styles */
+.container-fluid h2 {
+    margin-top: 20px;
+}
+
+.container-fluid p {
+    font-size: 18px;
+}
+
+.form-group {
+    width: 450px;
+    margin: 0px 10px;
+    font-size: 15px;
+}
+
+.form-box {
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.form-box form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    transform: scale(0.8);
+}
+
+.form-box form .input input {
+    height: 20%;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+
+.btn {
+    height: 35px;
+    background: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.view-button {
+    background: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+
+.btn:hover {
+    opacity: 0.82;
+}
+
+.submit {
+    width: 100%;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+/********* Home *****************/
+
+.nav {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right-links a {
+    padding: 0 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.main-box .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 840px) {
+    .main-box .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top .box {
+        margin: 10px 10px;
+    }
+
+    .bottom {
+        margin-top: 0;
+    }
+}
+
+.message {
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border: 1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.search-bar {
+    width: 30%; /* Adjust the width of the search bar as needed */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar form {
+    display: inline-block;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-container {
+    margin-left: 20px; /* Add margin to separate the search bar and table */
+    width: 100%; /* Adjust the width of the table container as needed */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 40%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-container span {
+    margin-right: 10px;
+}
+
+/* Apply styles to the radio buttons and labels */
+.radio-label {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between radio buttons and labels */
+    font-size: 16px;   /* Adjust the font size of labels */
+}
+
+/* Style the radio buttons themselves */
+.radio-label input[type="radio"] {
+    margin-right: 5px; /* Adjust the spacing between the radio button and label text */
+    vertical-align: middle; /* Vertically align the radio button with the label text */
+}
+
+/* Style the label text when hovering over the radio buttons */
+.radio-label:hover {
+    color: #007bff; /* Change the text color on hover (you can use any color you like) */
+    cursor: pointer; /* Show a pointer cursor on hover */
+}
